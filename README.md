@@ -1,18 +1,32 @@
 
 Trained Models
 -
-We provide all trained models as follows. We name the model in the order of learning.
+Download the trained models for baseline approaches including early, intermediate, and late fusion and our method via the link [link](https://drive.google.com/file/d/1FzyOU8gC_xLr590y-VNu22L0j9ccZ1yD/view?usp=drive_link) <br>
 
-| Models | Description |
+
+Running
+-
++ ### Test<br>
+ 	Download a trained model that you want to test and put it into ./runs/.
+  
+	| Models | Description |
 | --- | --- |
-| [N.pth.tar](https://drive.google.com/file/d/1EF9rLkgvM5igo-yT6yVSj4hU_FoqjEiQ/view?usp=sharing) | Trained model on the NYU-v2 |
-| [K.pth.tar](https://drive.google.com/file/d/1EF9rLkgvM5igo-yT6yVSj4hU_FoqjEiQ/view?usp=sharing) | Trained model on the KITTI |
-| [S.pth.tar](https://drive.google.com/file/d/1IVmJ7-B5VV65PsjIgk4knQ4hhvbYOVqb/view?usp=sharing) | Trained model on the ScanNet |
-| [NK.pth.tar](https://drive.google.com/file/d/1lXf9BFCflU5RNoNAGxWZQFDYAjTt7rMV/view?usp=sharing) | Trained model on the NYU-v2 and KITTI |
-| [KN.pth.tar](https://drive.google.com/file/d/1EF9rLkgvM5igo-yT6yVSj4hU_FoqjEiQ/view?usp=sharing) | Trained model on the KITTI and NYU-v2|
-| [NKS.pth.tar](https://drive.google.com/file/d/1lXf9BFCflU5RNoNAGxWZQFDYAjTt7rMV/view?usp=sharing) | Trained model on the NYU-v2, KITTI, and ScanNet |
-| [NSK.pth.tar](https://drive.google.com/file/d/1lXf9BFCflU5RNoNAGxWZQFDYAjTt7rMV/view?usp=sharing) | Trained model on the NYU-v2, ScanNet, and KITTI |
-| [SNK.pth.tar](https://drive.google.com/file/d/1ceKrFtlenwYyS6IKLOf3yWcQqYIo6ock/view?usp=sharing) | Trained model on the ScanNet, NYU-v2, and KITTI |
-| [SKN.pth.tar](https://drive.google.com/file/d/1EyRf6HRMeRIbYNAEzM67yqMtB1HhWPJH/view?usp=sharing) | Trained model on the ScanNet, KITTI, and NYU-v2 |
-| [KSN.pth.tar](https://drive.google.com/file/d/1EF9rLkgvM5igo-yT6yVSj4hU_FoqjEiQ/view?usp=sharing) | Trained model on the KITTI, ScanNet, and NYU-v2|
-| [KNS.pth.tar](https://drive.google.com/file/d/1EF9rLkgvM5igo-yT6yVSj4hU_FoqjEiQ/view?usp=sharing) | Trained model on the KITTI, NYU-v2, and ScanNet |
+| [test_EF.py] | evaluating performance of the early fusion of vision, LiDAR, and thermal data |
+| [test_IF.py] | evaluating performance of the intermediate fusion of vision, LiDAR, and thermal data |
+| [test_LF.py] | evaluating performance of the late fusion of vision, LiDAR, and thermal data |
+| [test_our.py] | evaluating performance of the prposed method for fusion of vision, LiDAR, and thermal data|
+| [test_all_ta.py] | evaluating performance of the prposed method for fusion of vision, LiDAR, and thermal data with the introduced trustworthiness assessment method|
+
++ ### Train<br>
+	| Models | Description |
+| --- | --- |
+| [train_EF.py] | training the early fusion model of vision, LiDAR, and thermal data |
+| [train_IF.py] | training the intermediate fusion model of vision, LiDAR, and thermal data |
+| [train_LF.py] | training the late fusion model of vision, LiDAR, and thermal data |
+| [train_v.py] | training the model for only vision |
+| [train_l.py] | training the model for only lidar |
+| [train_t.py] | training the model for only thermal |
+| [train_vl.py] | training the model for vision-lidar fusion |
+| [train_lt.py] | training the model for lidar-thermal fusion |
+| [train_vt.py] | training the model for vision-thermal fusion|
+| [train_all_our.py] | training the prposed model for fusion of vision, LiDAR, and thermal data|
