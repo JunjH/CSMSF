@@ -1,3 +1,7 @@
+Datasets
+-
+We provide a data index in CSV format for all the data used from the [MS2 dataset](https://sites.google.com/view/multi-spectral-stereo-dataset/home), including the training, validation, and test sets. Please download the dataset and place the data into the MS2_dataset directory.
+
 
 Trained Models
 -
@@ -11,11 +15,11 @@ Running
   
 | Methods | Description |
 | --- | --- |
-| test_EF.py | evaluating performance of the early fusion of vision, LiDAR, and thermal data |
-| test_IF.py | evaluating performance of the intermediate fusion of vision, LiDAR, and thermal data |
-| test_LF.py | evaluating performance of the late fusion of vision, LiDAR, and thermal data |
-| test_our.py | evaluating performance of the proposed method for fusion of vision, LiDAR, and thermal data|
-| test_all_ta.py | evaluating performance of the proposed method for fusion of vision, LiDAR, and thermal data with the introduced trustworthiness assessment method|
+| test_EF.py | evaluating the early fusion of vision, LiDAR, and thermal data |
+| test_IF.py | evaluating the intermediate fusion of vision, LiDAR, and thermal data |
+| test_LF.py | evaluating the late fusion of vision, LiDAR, and thermal data |
+| test_our.py | evaluating the proposed method for fusion of vision, LiDAR, and thermal data|
+| test_all_ta.py | evaluating the proposed method for fusion of vision, LiDAR, and thermal data with the introduced trustworthiness assessment method|
 
 + ### Train<be>
  Use the following scripts to train different methods.
