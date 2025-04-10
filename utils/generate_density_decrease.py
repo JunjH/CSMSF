@@ -2,7 +2,7 @@ import torch
 
 def reduce_density(x, decrease_rate=0.95): 
 
-    y = torch.zeros_like(x) # Use advanced indexing to assign the selected values 
+    y = torch.zeros_like(x) 
     for i in range(x.size(0)):
         non_zero_indices = (x[i] != 0).nonzero(as_tuple=False) 
         num_elements = round(non_zero_indices.shape[0] * decrease_rate)
