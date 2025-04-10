@@ -1,13 +1,13 @@
 
 Trained Models
 -
-Download the trained models for baseline approaches including early, intermediate, and late fusion and our method via the link [link](https://drive.google.com/file/d/1FzyOU8gC_xLr590y-VNu22L0j9ccZ1yD/view?usp=drive_link) <br>
+Download the trained models for baseline approaches, including early, intermediate, and late fusion, and our method via the [link](https://drive.google.com/file/d/1FzyOU8gC_xLr590y-VNu22L0j9ccZ1yD/view?usp=drive_link) <br>
 
 
 Running
 -
 + ### Test<br>
- 	Download a trained model that you want to test and put it into ./runs/.
+ 	Download a trained model that you want to test and put it into ./runs/. Then, use the following scripts to evaluate. 
   
 | Methods | Description |
 | --- | --- |
@@ -18,7 +18,8 @@ Running
 | test_all_ta.py | evaluating performance of the proposed method for fusion of vision, LiDAR, and thermal data with the introduced trustworthiness assessment method|
 
 + ### Train<be>
-
+ Use the following scripts to train different methods.
+  
 | Methods | Description |
 | --- | --- |
 | train_EF.py | training the early fusion model of vision, LiDAR, and thermal data |
