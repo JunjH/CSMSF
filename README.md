@@ -6,8 +6,7 @@ Download the trained models for baseline approaches including early, intermediat
 
 Running
 -
-+ ### Test<br>
- 	Download a trained model that you want to test and put it into ./runs/.
+
   
 	| Models | Description |
 | --- | --- |
