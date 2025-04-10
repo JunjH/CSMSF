@@ -11,7 +11,7 @@ Download the trained models for baseline approaches, including early, intermedia
 Running
 -
 + ### Test<br>
- 	Download a trained model that you want to test and put it into ./runs/. Then, use the following scripts to evaluate. 
+Download a trained model that you want to test and put it into ./runs/. Then, use the following scripts to evaluate. 
   
 | Methods | Description |
 | --- | --- |
