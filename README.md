@@ -36,3 +36,20 @@ Download a trained model that you want to test and put it into ./runs/. Then, us
 | train_lt.py | training the model for lidar-thermal fusion |
 | train_vt.py | training the model for vision-thermal fusion|
 | train_all_our.py | training the proposed model for fusion of vision, LiDAR, and thermal data|
+
+
+Citation
+-
+
+    @ARTICLE{11045210,
+	  author={Hu, Junjie and Fan, Chenyou and Ozay, Mete and Gao, Qing and Guo, Yulan and Lam, Tin Lun},
+	  journal={IEEE Transactions on Pattern Analysis and Machine Intelligence}, 
+	  title={Robust Depth Estimation Under Sensor Degradations: A Multi-Sensor Fusion Perspective}, 
+	  year={2025},
+	  volume={},
+	  number={},
+	  pages={1-17},
+	  doi={10.1109/TPAMI.2025.3581311}}
+   
+
+        
